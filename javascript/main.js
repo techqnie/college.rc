@@ -3,7 +3,7 @@ let navBar=document.querySelector(".nav_bar");
 let bodyAfter=document.querySelector("body");
 
 let a=0;
-function playMenu () {
+menu.onclick = function playMenu () {
     menu.src="images/header/menu.png";
     menu.classList.remove("active");
     navBar.style.display="none";
@@ -16,8 +16,8 @@ function playMenu () {
     a--;
 }
 
-menu.onclick=()=> {
-    if(a==0) {
+menu.onmouseover=()=> {
+    // if(a==0) {
         menu.src="images/header/close.png";
         menu.classList.add("active");
         navBar.style.display="flex";
@@ -25,10 +25,10 @@ menu.onclick=()=> {
         bodyAfter.style.zIndex="1000";
         bodyAfter.style.overflow="hidden";
         a++;
-    }
-    else if (a==1) {
-        playMenu ();
-    }
+    // }
+    // else if (a==1) {
+    //     playMenu ();
+    // }
 }
 
 // menu.onclick = ()=>{
@@ -41,19 +41,19 @@ let navBarMeaningOne=document.querySelector(".nav_bar__meaning.one");
 let navBarMeaningTwo=document.querySelector(".nav_bar__meaning.two");
 let navBarMeaningThree=document.querySelector(".nav_bar__meaning.three");
 
-listLiOne.onclick=()=> {
+listLiOne.onmouseover=()=> {
     navBarMeaningOne.style.display="flex";
     navBarMeaningTwo.style.display="none";
     navBarMeaningThree.style.display="none";
 }
 
-listLiTwo.onclick=()=> {
+listLiTwo.onmouseover=()=> {
     navBarMeaningOne.style.display="none";
     navBarMeaningTwo.style.display="flex";
     navBarMeaningThree.style.display="none";
 }
 
-listLiFour.onclick=()=> {
+listLiFour.onmouseover=()=> {
     navBarMeaningOne.style.display="none";
     navBarMeaningTwo.style.display="none";
     navBarMeaningThree.style.display="flex";
