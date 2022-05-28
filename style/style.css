@@ -284,25 +284,156 @@ li.list_li>a {
     max-width: 100vw;
     width: 100%;
     border-radius: 0px;
-    background: rgba(3, 178, 107, 1);
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: relative;
+    background: rgb(146,255,192);
+background: linear-gradient(90deg, rgba(146,255,192,1) 20%, rgba(0,38,97,0.5413515748096114) 100%);
 }
 
 .box_two img {
     height: 300px;
     width: 480px;
     cursor: pointer;
+}
 
+/* Общие стили */
+*, *:after, *:before { 
+	border-box; 
+	box-sizing: border-box; 
+}
+.clearfix:before, .clearfix:after { 
+	content: ''; 
+	display: table; 
+}
+.clearfix:after { 
+	clear: both; 
+}
+.hover-text-one {
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+}
+.hover-text-one figure {
+    border-radius: 10px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	background: #527c82;
+	text-align: center;
+	cursor: pointer;
+}
+.hover-text-one figure img {
+    filter: blur(3px);
+	position: relative;
+	display: block;
+	min-height: 100%;
+	opacity: 0.8;
+}
+.hover-text-one figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.hover-text-one figure figcaption::before,
+.hover-text-one figure figcaption::after {
+	pointer-events: none;
+}
+.hover-text-one figure figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.hover-text-one figure h3 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+.hover-text-one figure h3 span {
+	font-weight: 800;
+}
+.hover-text-one figure h3,
+.hover-text-one figure p {
+	margin: 0;
+}
+.hover-text-one figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/* Эффект при наведении */
+figure.effect-text-two figcaption::before {
+    border-radius: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+	background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+	content: '';
+	opacity: 0;
+	-webkit-transform: translate3d(0,50%,0);
+	transform: translate3d(0,50%,0);
+}
+figure.effect-text-two h3 {
+    border-radius: 10px;
+    font-size: 32px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	color:rgba(225, 252, 222, 1) !important;
+	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
+	transition: transform 0.35s, color 0.35s;
+	-webkit-transform: translate3d(0,-50%,0);
+	transform: translate3d(0,-50%,0);
+}
+figure.effect-text-two figcaption::before,
+figure.effect-text-two p {
+    border-radius: 10px;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+figure.effect-text-two p {
+    border-radius: 10px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	opacity: 0;
+	-webkit-transform: translate3d(0,10px,0);
+	transform: translate3d(0,10px,0);
+}
+figure.effect-text-two:hover h3 {
+    border-radius: 10px;
+	color: #fff;
+	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+	transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+}
+figure.effect-text-two:hover figcaption::before ,
+figure.effect-text-two:hover p {
+    border-radius: 10px;
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
 }
 .new_box {
     height: auto;
     max-width: 100vw;
     width: 100%;
     position: relative;
-    background: rgba(3, 178, 107, 1);
+    background: rgb(146,255,192);
+background: linear-gradient(90deg, rgba(146,255,192,1) 20%, rgba(0,38,97,0.5413515748096114) 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -429,6 +560,10 @@ li.list_li>a {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 1.5s;
+}
+.section_box__btn:hover{
+    background: linear-gradient( 135deg, #69FF97 10%, #00E4FF 100%);
 }
 
 .section_box__btn a {
@@ -447,6 +582,7 @@ li.list_li>a {
     text-align: center;
     margin: 5px;
 }
+
 
 .box_btn__img {
     height: 30px;
@@ -523,6 +659,7 @@ li.list_li>a {
     border: 1px solid white;
 }
 .box_contacts {
+    
     height: 230px;
     max-width: 100vw;
     width: 100%;
@@ -894,8 +1031,9 @@ li.list_li>a {
         display: none;
     }
     .new_box {
-        top: -10px;
+        top: -30px;
         height:800px;
+        background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
     }
 
     .new_box.active {
@@ -1252,11 +1390,10 @@ li.list_li>a {
         width: 390px;
         justify-content: space-around;
         align-items: center;
-        background: rgba(3, 178, 107, 1);
+        background-image: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
         z-index: 10;
     }
     .box_two__twoo>button {
-        margin-top: 30px;
         height: 25px;
         width: 110px;
         border-radius: 10px;
