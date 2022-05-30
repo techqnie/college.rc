@@ -484,10 +484,12 @@ li.list_li>a {
 
 @media (max-width: 1360px) { 
     .gallery_box{
+        width: 390px;
         font-size: 14px;
         color: azure;
         text-align: center;
-        background-color: #2B7A78
+        background-color: #2B7A78;
+        margin-top: 2px;
     }
     .gallery-item{
         flex: 40%;
