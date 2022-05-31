@@ -277,6 +277,10 @@ li.list_li>a {
 .box_two__twoo {
     display: none;
 }
+.box_two__twoo a{
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
 
 .box_two {
     min-height: 500px;
@@ -290,6 +294,7 @@ li.list_li>a {
     background: rgb(146,255,192);
 background: linear-gradient(90deg, rgba(146,255,192,1) 20%, rgba(0,38,97,0.5413515748096114) 100%);
 }
+
 
 .box_two img {
     height: 300px;
