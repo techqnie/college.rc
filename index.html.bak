@@ -73,17 +73,15 @@
                 </figcaption>			
             </figure>
           </div>
-		  <a href="D:\college2\pages\specialist\specialist.html">
           <div class="hover-text-one">
             <figure class="effect-text-two">
               <img class="section_one" src="images\boxTwo\№2(not_blure).png" alt="">
                 <figcaption>
-              <h3> <span>Спеціальності</span></h3>
+              <h3> <span>Абітурієнту</span></h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </figcaption>			
             </figure>
           </div>
-		  </a>
           <div class="hover-text-one">
             <figure class="effect-text-two">
               <img class="section_one" src="images\boxTwo\№3(not_blure).png" alt="">
