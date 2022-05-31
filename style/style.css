@@ -183,7 +183,7 @@ li.list_li>a {
     z-index: 1;
 }
 .video_media{
-    width: 100%;
+    width: 100vw;
     height: auto;
     position: absolute;
     top: 0;
@@ -515,6 +515,12 @@ background: linear-gradient(90deg, rgba(146,255,192,1) 20%, rgba(0,38,97,0.54135
 .section_img__original {
     width: 290px;
     height: 303px;
+    position: relative;
+    left: -5px;
+}
+.section_img__original_2 {
+    width: 290px;
+    height: 298px;
     position: relative;
     left: -5px;
 }
