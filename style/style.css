@@ -828,7 +828,7 @@ background: linear-gradient(90deg, rgba(146,255,192,1) 20%, rgba(0,38,97,0.54135
     height: 25px;
     width: 25px;
 }
-@media (max-width: 1360px) {
+@media (max-width: 1000px) {
     .box_video{
         position: relative;
         padding-bottom: 56.25%;
